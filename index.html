@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Task Pomodoro Timer</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Task Pomodoro Timer</h1>
+    <div class="timer">
+        <div class="timer-label" id="timerLabel">Work</div>
+        <div class="time" id="timer">25:00</div>
+        <button id="startButton">Start</button>
+        <button id="resetButton">Reset</button>
+      </div>
+  </div>
+  <div id="notification" class="notification">
+    <div id="notificationText"></div>
+  </div>
+  <div class="notification-overlay"></div>
+  <script src="script.js"></script>
+  <audio id="notificationSound">
+    <source src="notification.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+</body>
+</html>
